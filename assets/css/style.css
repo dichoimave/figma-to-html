@@ -1,12 +1,47 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
 /* Khôi phục lại cỡ chữ mặc định theo rem */
-body{
-    font-size: 1.6rem;
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* ============common============ */
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1170px;
+  min-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =============header============ */
+.header .body {
+  display: flex;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+.nav a {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  /* background-color: blue; */
+  padding: 8px 21px;
+}
+
+.nav a:hover {
+  color: #171100;
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
 }
