@@ -10,6 +10,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
+  display: flex;
 }
 /* ============common============ */
 a {
@@ -28,6 +29,7 @@ a {
   display: flex;
 }
 .nav {
+  position: relative;
   margin-left: auto;
 }
 .nav ul {
@@ -44,4 +46,14 @@ a {
   color: #171100;
   /* font-weight: 600; */
   text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.active a::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 2px;
+  background: #171100;
+  border-radius: 1px;
 }
